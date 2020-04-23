@@ -5,5 +5,5 @@ library(foreach)
 
 all_countries <- download_merged_data(cached = TRUE)
 
-write.csv(all_countries, 'E:/PAPIC/tidycovid19 wrapper/merged_data_tidyverse19.csv')
-write.table(Sys.time(),"E:/PAPIC/tidycovid19 wrapper/lastVersion_data_tidyverse19.txt")
+write.csv(all_countries, 'E:/PAPIC/tidycovid19 wrapper/merged_data_tidyverse19.csv', row.names = FALSE)
+write.table(Sys.time(),"E:/PAPIC/tidycovid19 wrapper/lastVersion_data_tidyverse19.txt", row.names = FALSE)
